@@ -1,0 +1,2 @@
+class TakedosagesController < ApplicationController
+end
