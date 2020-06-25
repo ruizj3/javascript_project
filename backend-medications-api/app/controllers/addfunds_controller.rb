@@ -1,0 +1,2 @@
+class AddfundsController < ApplicationController
+end
