@@ -2,10 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap" rel="stylesheet">
     <title></title>
   </head>
+
+  <div>
+    <button id="doctors" class="btn" onclick="filterSelection(this.id)"> Select Doctor to Show Patients</button>
+  </div>
+  <input type="button" value="Remove All" onclick="removeAll()">
   <body>
-   Sample text - replace me!
+    <ul class = "main" id="patients"></ul>
   </body>
+
   <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
 </html>
