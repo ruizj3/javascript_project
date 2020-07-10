@@ -1,0 +1,42 @@
+.show {
+  display: block;
+}
+
+.btn {
+  border: bold;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #708090;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #FFFAFA;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Style the main content */
+.main {
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+
+.centerWindow {
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px grey;
+  background-color: rgba(0, 0, 255, 0.3);
+}
