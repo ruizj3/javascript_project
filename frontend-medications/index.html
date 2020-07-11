@@ -7,12 +7,27 @@
     <title></title>
   </head>
 
-  <div>
-    <button id="doctors" class="btn" onclick="removeAll()"> Click to Clear Patient List</button>
-  </div>
-  <body>
-    <ul class = "main" id="patients"></ul>
-  </body>
+
+  <h1>
+  <body class = "centerWindow" id="doctors">Select Doctor Below to View Patients</body>
+    <div class = "main" id="patients"></div>
+    <ul class = "main" id="patients-prescription-form"></ul>
+  </h1>
+
+    <form class="form-container" id="new-prescription" >
+      <h2> Create New Prescription </h2>
+      <label for="dosagestotal">Dosages Total</label>
+      <input type="text" id="dosagestotal" name="dosagestotal"/>
+      <label for="dosagesper">Dosages Per</label>
+      <input type="text" id="dosagesper" name="dosagesper"/>
+      <label for="dosagesfrequency">Frequency</label>
+      <input type="text" id="dosagesfrequency" name="dosagesfrequency"/>
+      <label for="patient_id">Patient_ID</label>
+      <input type="text" id="patient_id" name="patient_id"/>
+      <label for="medication_id">Medication_ID</label>
+      <input type="text" id="medication_id" name="medication_id"/>
+      <button type="submit"> Create New Prescription </button>
+     </form>
 
   <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
 </html>
