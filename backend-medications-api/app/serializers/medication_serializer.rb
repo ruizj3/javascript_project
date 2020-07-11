@@ -1,4 +1,4 @@
 class MedicationSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :priceperpill
 end
