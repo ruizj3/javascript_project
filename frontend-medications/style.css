@@ -20,12 +20,12 @@
   color: white;
 }
 
-/* Style the main content */
 .main {
   font-family: 'Mukta', sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 160px; /* Same as the width of the sidenav */
+  text-align: center;
+  margin-left: 160px;
   padding: 0px 10px;
 }
 
@@ -36,7 +36,7 @@
   text-align: center;
   border: solid;
   border-width: 1px;
-  border-radius: 25px;
+  border-radius: 50px;
   box-shadow: 10px 10px 5px grey;
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(10, 50, 200, 0.4);
 }
