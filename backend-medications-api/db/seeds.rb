@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Doctor.create(username: 'Joseph', password: '1234')
 Doctor.create(username: 'Mr. Medicine', password: '1234')
+Doctor.create(username: 'Mrs. Drugs', password: '1234')
 
 Patient.create(username: 'Jim', password: '1234', dob: '1969-01-01', ethnicity: 'Caucasian', doctor_id: 1)
 Patient.create(username: 'Bob', password: '1234', dob: '2000-01-01', ethnicity: 'Black', doctor_id: 1)
@@ -14,6 +15,7 @@ Patient.create(username: 'Mochi', password: '1234', dob: '2013-01-01', ethnicity
 
 Medication.create(name: 'Xanax', priceperpill: 100)
 Medication.create(name: 'Molly', priceperpill: 7)
+Medication.create(name: 'Percocet', priceperpill: 10)
 
 Prescription.create(dosagestotal: 100, dosagesper: 2, dosagesfrequency: 'Daily', patient_id: 1, medication_id: 1)
 Prescription.create(dosagestotal: 51, dosagesper: 3, dosagesfrequency: 'Daily', patient_id: 1, medication_id: 2)
