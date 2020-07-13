@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Medication Tracker</title>
   </head>
 
 
   <h1>
-  <body class = "centerWindow" id="doctors">Select Doctor Below to View Patients</body>
+    <div class = "centerWindow" id="doctors">Select Doctor to View Patients: </div>
     <div class = "main" id="patients"></div>
     <ul class = "main" id="patients-prescription-form"></ul>
   </h1>
+
 
     <form class="form-container" id="new-prescription" >
       <h2> Create New Prescription </h2>
@@ -26,6 +27,13 @@
       <input type="text" id="patient_id" name="patient_id"/>
       <label for="medication_id">Medication_ID</label>
       <input type="text" id="medication_id" name="medication_id"/>
+      <!-- <label for="patienList">Select Patient:</label>
+       <select id="patientList" name="patientList">
+        <option value="volvo">Volvo</optio>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select> -->
       <button type="submit"> Create New Prescription </button>
     </form>
 
