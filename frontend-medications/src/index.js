@@ -32,12 +32,18 @@ function filterSelection(id) {
   .then(function (data) {
     document.getElementById("patients").innerHTML = "";
     document.getElementById("patients-prescription-form").innerHTML = "";
+    console.log(data.data.sort(function(a, b) {
+      return a.attributes.username.localeCompare(b.attributes.username);
+    }
+   )
+  );
     for (var i = 0; i < data.data.length; i++){
       const doctor = data.data[i].attributes.doctor.id;
       const patients = document.getElementById("patients");
       if (doctor == id) {
         const p = document.createElement("p");
-        p.innerHTML += "<button id =" + data.data[i].id + " class="+"btn"+ " onclick="+"filterPrescription(this.id)"+ ">" + data.data[i].attributes.username + ', Date of Birth: ' + data.data[i].attributes.dob + "</button>"
+        const pats = data.data[i];
+        p.innerHTML += "<button id =" + pats.id + " class="+"btn"+ " onclick="+"filterPrescription(this.id)"+ ">" + pats.attributes.username + ', Date of Birth: ' + pats.attributes.dob + "</button>"
         patients.appendChild(p);
       }
     }
